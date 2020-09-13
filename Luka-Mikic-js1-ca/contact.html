@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a class="nav" href="index.html">Home</a>
+      <a class="nav" href="contact.html">Contact</a>
+    </nav>
+    <form id="contactForm">
+      <h3>Contact Form</h3>
+      <div>
+        <input type="text" id="name" placeholder="Name" />
+        <div id="nameError" class="formError">* required</div>
+      </div>
+      <div>
+        <input type="text" id="subject" placeholder="Subject" />
+        <div id="subjectError" class="formError">
+          * minimum length is 10 characters
+        </div>
+      </div>
+      <div>
+        <input type="text" id="email" placeholder="E-mail" />
+        <div id="emailError" class="formError">* invalid input</div>
+      </div>
+      <div>
+        <input type="text" id="address" placeholder="Address" />
+        <div id="addressError" class="formError">
+          * minimum length is 25 characters
+        </div>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
